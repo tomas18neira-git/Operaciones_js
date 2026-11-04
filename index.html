@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form action="">
+                <h3>Primer Ejercicio DOM</h3>
+
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Ingresar Nombre">
+
+                <br>
+                <input type="text" id="resultado">
+
+                <button type="button" onclick="saludar()">Aceptar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Segundo Ejercicio DOM</h3>
+
+            <form action="">
+                <label for="nombre2">Nombre Completo:</label>
+                <input type="text" id="nombre2">
+                <label for="programa2">Programa de formación</label>
+                <input type="text" id="programa2">
+                <button onclick="registrar()" type="button">Registrar</button>
+            </form>
+
+            <h2>Resultados</h2>
+            <p>Resultado en un input:</p>
+            <input type="text" id="resultado11" readonly>
+            <p id="resultado22">Resultado con innerText:</p>
+            <p id="resultado33">Resultado con innerHTML:</p>
+            <p id="resultado44">Resultado con textContent:</p>
+        </section>
+
+        <section>
+            <form action="">
+                <h3>Tercer Ejercicio DOM: operaciones numericas</h3>
+
+                <label for="valorUno">Valor 1:</label>
+                <input type="text" id="valorUno" placeholder="Ej: 15.8">
+
+                <label for="valorDos">Valor 2:</label>
+                <input type="text" id="valorDos" placeholder="Ej: 4.25">
+                <br>
+
+                <button type="button" onclick="calcularOperaciones()">Calcular</button>
+                <button type="reset">Cancelar</button>
+            </form>
+
+            <h2>Resultados</h2>
+
+            <p>Resultado suma:</p> <span id="resultado_suma"></span>
+            <p>Resultado resta:</p> <span id="resultado_resta"></span>
+            <p>Resultado multiplicacion:</p> <span id="resultado_multiplicaciion"></span>
+            <p>Resultado division: <span id="resultado_division"></span></p>
+        </section>
+
+    </main>
+
+    
+</body>
+
+<script src="js/script.js"></script>
+</html>
